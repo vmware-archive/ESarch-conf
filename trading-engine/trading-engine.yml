@@ -1,1 +1,6 @@
-debug: true
+# Set the general logging level within the application
+logging:
+  level:
+    io:
+      pivotal:
+        refarch: DEBUG
