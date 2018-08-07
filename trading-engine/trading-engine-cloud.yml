@@ -7,6 +7,4 @@ logging:
 
 spring.jpa.generate-ddl: true
 spring.jpa.hibernate.ddl-auto: create
-spring.jpa.database: mysql
 spring.jpa.show-sql: true
-spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
