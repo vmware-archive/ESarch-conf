@@ -7,7 +7,9 @@ logging:
   level:
     io.pivotal.refarch: DEBUG
     org.hibernate.SQL: INFO
+    com.zaxxer.hikari: INFO
 
+spring.datasource.type: com.zaxxer.hikari.HikariDataSource
 spring.jpa.generate-ddl: true
 spring.jpa.hibernate.ddl-auto: create-drop
 spring.jpa.show-sql: true
