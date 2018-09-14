@@ -6,10 +6,11 @@ logging:
     com.zaxxer.hikari: INFO
 
 spring.datasource.type: com.zaxxer.hikari.HikariDataSource
+spring.datasource.hikari.maximumPoolSize: 4
+
 spring.jpa.generate-ddl: true
 spring.jpa.hibernate.ddl-auto: create-drop
 spring.jpa.show-sql: true
 spring.jpa.hibernate.use-new-id-generator-mappings: true
 spring.jpa.database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-spring.jpa.hibernate.hikari.maximumPoolSize: 4
 
