@@ -15,6 +15,7 @@ spring:
     generate-ddl: true
     show-sql: true
     # database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.MySQLMyISAMDialect
     hibernate:
       ddl-auto: create-drop
       use-new-id-generator-mappings: true
