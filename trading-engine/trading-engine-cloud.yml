@@ -9,12 +9,12 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
-      maximumPoolSize: 4
+      maximumPoolSize: 2
       leakDetectionThreshold: 30000
   jpa:
     generate-ddl: true
     show-sql: true
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    # database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: create-drop
       use-new-id-generator-mappings: true
