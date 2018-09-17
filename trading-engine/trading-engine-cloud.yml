@@ -7,7 +7,7 @@ logging:
 
 spring:
   datasource:
-    type: com.zaxxer.hikari.HikariDataSourceß
+    type: com.zaxxer.hikari.HikariDataSource
     hikari:
       maximumPoolSize: 4
       setLeakDetectionThreshold: (60 * 1000)
