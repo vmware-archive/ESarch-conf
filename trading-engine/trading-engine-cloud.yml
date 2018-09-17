@@ -12,7 +12,10 @@ spring:
       maximumPoolSize: 3
       leakDetectionThreshold: 5000
       connectionTimeout: 30000
-      
+      idleTimeout: 30000 # The minimum allowed value is 10000ms (10 seconds). Default: 600000 (10 minutes) 
+      maxLifetime: 60000 # A value of 0 indicates no maximum lifetime (infinite lifetime), subject of course to the idleTimeout setting. Default: 1800000 (30 minutes)
+
+
   jpa:
     generate-ddl: true
     show-sql: true
