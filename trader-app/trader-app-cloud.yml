@@ -10,7 +10,9 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       maximumPoolSize: 3
-      leakDetectionThreshold: 30000
+      leakDetectionThreshold: 5000
+      connectionTimeout: 30000
+      
   jpa:
     generate-ddl: true
     show-sql: true
