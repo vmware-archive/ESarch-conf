@@ -2,7 +2,7 @@
 logging:
   level:
     io.pivotal.refarch: INFO
-    org.hibernate.SQL: WARN
+    org.hibernate.SQL: INFO
     com.zaxxer.hikari: DEBUG
 
 spring:
