@@ -1,8 +1,8 @@
 # Set the general logging level within the application
 logging:
   level:
-    io.pivotal.refarch: DEBUG
-    org.hibernate.SQL: INFO
+    io.pivotal.refarch: INFO
+    org.hibernate.SQL: WARN
     com.zaxxer.hikari: DEBUG
 
 spring:
@@ -16,9 +16,9 @@ spring:
       idleTimeout: 30000 # The minimum allowed value is 10000ms (10 seconds). Default: 600000 (10 minutes) 
       maxLifetime: 60000 # A value of 0 indicates no maximum lifetime (infinite lifetime), subject of course to the idleTimeout setting. Default: 1800000 (30 minutes)
 
-  jpa:
+  jpa:
     generate-ddl: true
-    show-sql: true
+    show-sql: false
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: create-drop
