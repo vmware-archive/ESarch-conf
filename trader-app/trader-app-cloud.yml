@@ -1,7 +1,7 @@
 # Set the general logging level within the application
 logging:
   level:
-    org.axonframework: DEBUG
+    org.axonframework: INFO
     io.pivotal.refarch: DEBUG
     org.hibernate.SQL: INFO
     com.zaxxer.hikari: DEBUG
@@ -22,7 +22,7 @@ spring:
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
       use-new-id-generator-mappings: true
 
 your:
