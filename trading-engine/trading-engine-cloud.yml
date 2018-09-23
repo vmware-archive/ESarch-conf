@@ -1,6 +1,7 @@
 # Set the general logging level within the application
 logging:
   level:
+    org.axonframework.messaging.unitofwork: DEBUG
     io.pivotal.refarch: DEBUG
     org.hibernate.SQL: INFO
     com.zaxxer.hikari: DEBUG
